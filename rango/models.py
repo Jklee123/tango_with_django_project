@@ -7,7 +7,6 @@ class Category(models.Model):
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
 
-
     class Meta:
         verbose_name_plural = 'Categories'
 
