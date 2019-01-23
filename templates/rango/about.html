@@ -1,34 +1,18 @@
-
 <!DOCTYPE html>
-
 {% load staticfiles %}
-
 <html> 
-
     <head> 
+        <title>Rango</title> 
+    </head> 
 
-		<title>Rango</title> 
+    <body>
+        Rango says here is the about page. <br /> 
+        <strong>{{ boldmessage }}</strong><br />
 
-	</head> 
-
-	<body>
-
-		 <div> 
-
-			Rango says here is the about page. <br /> 
-
-			<strong>{{ boldmessage }}</strong><br />
-
-		 </div> 
-
-		<div>
-			<a href="/rango/">Index</a><br />
-			<img src="{{ MEDIA_URL}}cat.jpg" />
-			<img src="{% static "images/wetcat.jpg" %}"
-                            alt="Picture of cats!" />
-
-		</div> 
-
-	</body> 
-
+        <div>
+	    <a href="/rango/">Index</a><br />
+	    <img src="{{ MEDIA_URL}}cat.jpg" />
+	    <img src="{% static "images/wetcat.jpg" %}"alt="Picture of cats!" />
+	</div> 
+    </body> 
 </html> 
